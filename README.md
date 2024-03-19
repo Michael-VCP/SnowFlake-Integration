@@ -14,3 +14,14 @@
    -Require external ID
    -Grant permission to the newly created permission
    -Define name to your role
+   -Click role to copy role ARN number. Used for snowflake. 
+6. Open Snowflake worksheet
+   -"CREATE DATABASE DEMO;"
+   -"CREATE SCHEMA DEMO_12032022;"
+   -Create syntax - CREATE OR REPLACE STORAGE INTEGRATION aws_s3_integration
+   -type = external_stage
+   -Storage_provide = 'S3'
+   -enabled=true
+   -storage_aws_role_arn= (Copy/paste aws ARN)
+   -storage_allowed_location= (Copy/paste aws scheme)
+   
